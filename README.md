@@ -1,0 +1,1 @@
+# ovsistskakoza.sk
