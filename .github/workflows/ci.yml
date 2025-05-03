@@ -12,6 +12,7 @@ env:
   ECS_CLUSTER: kozaovsiste
   ECS_TASK_DEFINITION: ./.aws/ecs-task-definition.json
   CONTAINER_NAME: kozaovsiste-django
+  ALLOWED_HOSTS: 'kozaovsiste.sk'
 
 jobs:
   build:
