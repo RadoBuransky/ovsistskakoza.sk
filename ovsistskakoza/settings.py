@@ -28,12 +28,11 @@ SECRET_KEY =  os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-#f@h&-fw63%q0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOST").split(",")
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOST', '').split(",")
 ALLOWED_HOSTS.append(gethostbyname(gethostname()))
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
