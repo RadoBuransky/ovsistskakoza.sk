@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: eu-central-1
-  ECR_REPOSITORY: public.ecr.aws/c7j0z8p3/kozaovsiste
+  ECR_REPOSITORY: kozaovsiste
   ECS_SERVICE: kozaovsiste-service-dnfynf4o
   ECS_CLUSTER: kozaovsiste
   ECS_TASK_DEFINITION: ./.aws/ecs-task-definition.json
