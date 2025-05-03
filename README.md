@@ -16,6 +16,14 @@
    1. `SECRET_KEY`
    1. `DEBUG`
    1. `ALLOWED_HOSTS`
+1. `ssh -i "c:\Users\rado\.ssh\kozaovsiste.pem" ubuntu@ec2-3-72-251-229.eu-central-1.compute.amazonaws.com`
+   1. `sudo apt update && sudo apt upgrade -y`
+   1. `sudo apt install -y docker.io docker-compose git`
+   1. `sudo shutdown --reboot now`
+   1. `sudo systemctl enable docker`
+   1. `sudo systemctl start docker`
+
+`aws ecs register-task-definition --generate-cli-skeleton > ecs-task-definition.json`
 
 ## Run Locally
 
