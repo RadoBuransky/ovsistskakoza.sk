@@ -32,13 +32,12 @@ jobs:
 
     - name: Run Tests
       run: |
-        python manage.py test
-        
+        python manage.py test        
 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    environment: production
+    needs: [ 'build' ]
 
     steps:
       - name: Checkout
